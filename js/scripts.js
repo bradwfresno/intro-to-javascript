@@ -1,5 +1,5 @@
 const userName = prompt("What is your name?");
-const color = prompt(`${userName}, What is your favorite color? Please pick from the following... red, orange, yellow, green, blue, pink, purple, black, white, and grey`);
+const color = prompt(`${userName}, What is your favorite color? Please pick from the following... red, orange, yellow, green, blue, pink, purple, black, white, and grey`).toLocaleLowerCase();
 
 switch (color) {
 
