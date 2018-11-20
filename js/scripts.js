@@ -79,6 +79,7 @@
 // console.log(user.age);
 
 const favemovie = prompt("What is your fave movie?").toLowerCase()
+if(favemovie){
 const faveMovie1 = ['empire','1983'];
 const faveMovie2 = ['last jedi','2017'];
 const faveMovie3 = ['pulp fiction','1999'];
@@ -86,8 +87,9 @@ const faveMovie4 = ['cowboy bebop','2005'];
 const faveMovie5 = ['dragon ball','2000'];
 
 const faveMovies = [faveMovie1,faveMovie2,faveMovie3,faveMovie4,faveMovie5];
-for(movie of faveMovies){
+for(let movie of faveMovies){
     if(movie[0] == favemovie){
         alert(movie[0] + " year: " + movie[1])
     }
+}
 }
