@@ -14,11 +14,11 @@
 // queryItem('body');
 
 const header = document.querySelector('#header');
-header.addEventListener("click", event => header.style.display = 'none');
+header.addEventListener("click", event => header.style.color = "limegreen");
 document.addEventListener('keyup',event => {
     header.style.color="tomato";
     if(event.key === "Enter"){
-        alert("you pressed enter");
+        return alert("you pressed enter");
     }
     console.log(event);
 });
@@ -37,6 +37,6 @@ btn.addEventListener("click", event => alert("clicked"));
 
 const btns = document.querySelectorAll("button");
 
-btns.forEach(btns => btns.addEventListener('click', () => alert("clicked")));
+btns.forEach(btns => btns.addEventListener('click', () => alert("clicked 2")));
     
 
